@@ -1,4 +1,5 @@
 variable "common_tags" {
+  default     = {}
   description = "(Optional) Map of common tags for all taggable resources"
   type        = map(string)
 }
@@ -9,6 +10,7 @@ variable "key_vault_id" {
 }
 
 variable "resource_name_prefix" {
+  default     = "dev"
   description = "Prefix applied to resource names"
   type        = string
 }
